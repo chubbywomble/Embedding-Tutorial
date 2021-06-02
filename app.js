@@ -22,6 +22,11 @@ const vizOptions = {
   device: "default",
   height: 800,
   width: 1000,
+  Category: ["Technology", "Furniture"],
+  onFirstInteractive: function () {
+    document.getElementById("exportPdf").disabled = false;
+    console.log("Viz now interactive :)");
+  },
 };
 
 function initViz() {
